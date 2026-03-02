@@ -50,11 +50,11 @@ const MantoFlip = ({ frontSrc, backSrc, frontDescription, backDescription }: Man
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="absolute inset-0 flex items-center justify-end pointer-events-none"
+          className="absolute inset-0 flex items-end md:items-center justify-center md:justify-end pointer-events-none"
         >
-          <div className="px-8 md:px-16 max-w-md mr-0 md:mr-8">
+          <div className="px-8 md:px-16 max-w-md pb-32 md:pb-0 md:mr-0 md:mr-8 w-full md:w-auto bg-black/60 md:bg-transparent py-6 md:py-0 backdrop-blur-sm md:backdrop-blur-none">
             {frontDescription && (
-              <p className="font-display text-base md:text-lg leading-relaxed text-right text-gradient-sacred" style={{ WebkitTextStroke: '0.5px rgba(0, 0, 0, 0.5)' }}>
+              <p className="font-display text-sm md:text-base lg:text-lg leading-relaxed text-center md:text-right text-gradient-sacred" style={{ WebkitTextStroke: '0.5px rgba(0, 0, 0, 0.5)' }}>
                 {frontDescription}
               </p>
             )}
@@ -82,11 +82,11 @@ const MantoFlip = ({ frontSrc, backSrc, frontDescription, backDescription }: Man
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: isFlipped ? 1 : 0, y: isFlipped ? 0 : 20 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="absolute inset-0 flex items-center justify-end pointer-events-none"
+          className="absolute inset-0 flex items-end md:items-center justify-center md:justify-end pointer-events-none"
         >
-          <div className="px-8 md:px-16 max-w-md mr-0 md:mr-8">
+          <div className="px-8 md:px-16 max-w-md pb-32 md:pb-0 md:mr-0 md:mr-8 w-full md:w-auto bg-black/60 md:bg-transparent py-6 md:py-0 backdrop-blur-sm md:backdrop-blur-none">
             {backDescription && (
-              <p className="font-display text-base md:text-lg leading-relaxed text-right text-gradient-sacred" style={{ WebkitTextStroke: '0.5px rgba(0, 0, 0, 0.5)' }}>
+              <p className="font-display text-sm md:text-base lg:text-lg leading-relaxed text-center md:text-right text-gradient-sacred" style={{ WebkitTextStroke: '0.5px rgba(0, 0, 0, 0.5)' }}>
                 {backDescription}
               </p>
             )}
